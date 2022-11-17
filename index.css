@@ -1,0 +1,460 @@
+/*Formato para index.html y comunes para las demas*/
+html, body{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+/*Primer banner de la página*/
+nav{
+    display: inline-flex;
+    background-color: #0D0D0D;
+    height:5.3rem;
+    width:100vw;
+    position:fixed;
+    top:0px;
+    left: 0px;
+    z-index: 2;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    width: 50vw;
+    align-items: center;
+}
+.links{
+    display: flex;
+    justify-content: flex-end;
+    width: 50vw;
+    align-items: center;
+}
+.logo img{
+    height: 5rem;
+    width: auto;
+    margin-left: 3vw;
+}
+.links img{
+    height: 3rem;
+    width: auto;
+    margin-right: 3vw;
+}
+
+/*.LinksDerecha{
+    grid-area: 1 / 7 / 2 / span 6;
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, 1fr);
+    list-style: none;
+    text-align: center;
+    align-items: center;
+}
+.ABasico{
+    grid-area: 1 / 1 / span 1 /span 2;  
+    width: 16rem;
+    height: 2.7rem;
+    display: grid;
+    align-items: center;
+}
+.AGold{
+    grid-area: 1 / 3 / span 1 /span 2;
+    width: 16rem;
+    height: 2.7rem;
+    display: grid;
+    align-items: center;
+}
+.APremium{
+    grid-area: 1 / 5 / span 1 /span 2;
+    width: 16rem;
+    height: 2.7rem;
+    display: grid;
+    align-items: center;
+}
+
+.LinksDerecha a{
+    text-decoration: none;
+    color: #F2F2F2;
+    font-size: 1.1rem;
+}
+.LinksDerecha a:hover{
+    font-size: 1.3rem;
+}
+.ABasico:hover, .AGold:hover, .APremium:hover{
+    background-color:#F28705;
+    border: 1px solid #F28705;
+    border-radius: 0.5rem;
+}*/
+/*Segunda seccion de la página*/
+header{
+    display:inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F2F2F2; 
+    width:100vw;
+    height: auto;
+    margin-top:5.3rem;
+    padding-bottom: 7rem;
+    padding-top: 3rem;
+}
+.headerLeft, .headerRight{
+    width: 700px; 
+    text-align: center;
+    display: block;
+    height:auto;
+}
+.headerLeft h3{
+    color: #0D0D0D;
+    text-align: center;
+    font-size: 2.1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.headerLeft img{
+    width: 100%;
+}
+header .boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerRight p{
+    color: #010326;
+    text-align:justify;
+    padding: 1.8rem;
+    font-size: 1.5rem;
+}
+header .boton{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    /*margin-bottom: 4rem;*/
+}
+
+header .boton a{
+    background-color: #010326;
+    color: #F2F2F2;
+    border: 0.5rem solid #F2F2F2;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    padding: 2rem 1.2rem;
+    width: 60%;
+}
+header .boton a:hover{
+    background-color:#F28705;
+    color:#F2F2F2;
+}
+/*Tercera seccion de la página:clientes*/
+#clientes{
+    display:flex;
+    background-color: #734002; 
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+}
+#clientes h2{
+    color: #F2F2F2;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 100vw;
+}
+#clientes .cliente{
+    padding: 0.5em;
+    border: 3px solid #F28705;
+    border-radius: 50%;
+    background-color:#F2F2F2;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clientes .cliente img{
+    width: 140px;
+    height: 140px;
+    background-color:#F2F2F2;
+    /*object-fit: fill;*/
+}
+
+/*Cuarta seccion de la página:titulo servicios*/
+#servicios{
+    display:flex;
+    background-color: #F2F2F2; 
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 2.5rem;
+}
+#servicios p{
+    width: 100vw;
+    text-align: center;
+    font-size: 1.7em;
+    color: #010326;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 2.5em;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+#servicios .box img{
+    width: 140px;
+    height: 140px;
+    object-fit:fill;
+    border: 5px solid #734002;
+    border-radius: 50%;
+    position: relative;
+    top: 75px;
+    z-index: 1;
+}
+#servicios .box .subbox{
+    border: 5px solid #734002;
+    border-radius: 10%;
+    padding: 1.2em;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    width: 260px;
+    height: 410px;
+}
+#servicios .box .subbox h2{
+    margin-top: 4.5rem;
+    width: 100%;
+}
+#servicios .box .subbox span{
+    width: 100%;
+    font-size: 1.2rem;
+}
+#servicios .box a{
+    background-color: #F28705;
+    width: 140px;
+    height: 140px;
+    border: 5px solid #F28705;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -50px;
+    left:110px;
+    z-index: 1;
+    font-size: 1.5rem;
+    color: #F2F2F2;
+    text-decoration: none;
+}
+#servicios .box a:hover{
+    background-color: #734002;
+    border: 5px solid #734002;
+}
+
+
+/*Quinta seccion de la página:Cifras*/
+.cifras{
+    display:flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #010326;
+    color:#F2F2F2;
+    padding: 1.5rem;
+    padding-bottom: 2.5rem;
+}
+.cifras p{
+    width: 100vw;
+    margin: 0.8rem;
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+}
+.cifras .cifra{
+    border: 2.5px solid #F28705;
+    border-radius: 50%;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.3rem;
+}
+
+
+/*Sexta seccion de la página:FOrmulario*/
+form{
+    display:flex;
+    justify-content: center;
+    background-color: #F2F2F2;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    width: 100vw;
+    text-align: center;
+}
+form .cajetin{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #0D0D0D;  
+    width: 80vw;
+    color:#F2F2F2;
+    border: 1px solid #010326;
+    border-radius: 1.5rem;
+}
+
+form .cajetin h2{
+    font-size: 1.6rem;
+    width: 80%;
+    margin-bottom: 2.2rem;
+    margin-top: 2.2rem;
+}
+form .cajetin .datos{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 80%;
+}
+form .cajetin .datos #nombre, form .cajetin .datos #correo{
+    margin-bottom: 1.5rem;
+    width: 100%;
+    outline: none;
+    font-size: 1.2rem;
+    height: 30px;
+}
+
+form .cajetin .datos #nombre:focus, form .cajetin .datos #correo:focus, form .cajetin textarea:focus{
+    border: 0.2rem solid #F28705;
+}
+form .cajetin  input, textarea{
+    border: 1px solid #010326;
+    border-radius: 5px;
+}
+form .cajetin textarea{
+    margin-bottom: 2rem;
+    width: 80%;
+    outline: none;
+    font-size: 1.2rem;
+    height: 110px;
+}
+form .cajetin #botonEnviar{
+    margin-bottom: 1.5rem;
+    width: 30%;
+    height: 50px;
+}
+form .cajetin #botonEnviar input{
+    font-size: 1.2rem;
+    width: 100%;
+    height: 100%;
+}
+form .cajetin #botonEnviar input:hover{
+    background-color:#F28705;
+    color:#F2F2F2;
+}
+/*ultima parte*/
+#contacto{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #F28705;
+    color: #0D0D0D;
+    padding: 1rem;
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
+}
+#contacto .imgCont{
+    width: 300px;
+    text-align: center;
+}
+#contacto .imgCont img{
+    width: 170px;
+    height: auto;
+}
+#Contacto{
+    list-style: none;
+    width: 375px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0%;
+}
+#MapaSitio{
+    list-style: none;
+    width: 375px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 0%;
+}
+#Contacto li{
+    padding-bottom: 0.6rem;
+    width: 100%;
+}
+#MapaSitio li{
+    margin-right: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+#contacto .TituloList{
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+#whatsappIcon{
+    position:fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+}
+#contacto a{
+    text-decoration: none;
+    color: #0D0D0D;
+}
+#contacto .BotonContacto:hover{
+    color:#F2F2F2;
+}
+/*privacy*/
+footer{
+    display:flex;
+    flex-wrap: wrap;
+    background-color:#0D0D0D;
+    color: #F2F2F2;
+    width: 100vw;
+    justify-content: center;
+}
+footer p{
+    padding-top: 1.2rem;
+    width: 100%;
+    text-align: center;
+}
+#FooterPrivacy{
+    width: 100%;
+    background-color:#0D0D0D;
+    color: #F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 1.5rem;
+}
+#FooterPrivacy a{
+    text-decoration: none;
+    color: #F2F2F2;
+}
+#FooterPrivacy a:hover{
+    color: #F28705;
+}
+
+#FooterTerm{  
+    padding: 0.3rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+#FooterPolit{
+    padding:0.3rem;
+    text-align: right;
+    padding-right: 1rem;
+}
+

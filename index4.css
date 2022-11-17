@@ -1,0 +1,149 @@
+/*Formato para index.html y comunes para las demas*/
+html, body{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+/*Primer banner de la página*/
+nav{
+    display: inline-flex;
+    background-color: #0D0D0D;
+    height:5.3rem;
+    width:100vw;
+    position:fixed;
+    top:0px;
+    left: 0px;
+    z-index: 2;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    width: 50vw;
+    align-items: center;
+}
+.links{
+    display: flex;
+    justify-content: flex-end;
+    width: 50vw;
+    align-items: center;
+}
+.logo img{
+    height: 5rem;
+    width: auto;
+    margin-left: 3vw;
+}
+.links img{
+    height: 3rem;
+    width: auto;
+    margin-right: 3vw;
+}
+/*BODY*/
+
+/*FOOTER*/
+#contacto{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #F28705;
+    color: #0D0D0D;
+    padding: 1rem;
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
+}
+#contacto .imgCont{
+    width: 300px;
+    text-align: center;
+}
+#contacto .imgCont img{
+    width: 170px;
+    height: auto;
+}
+#Contacto{
+    list-style: none;
+    width: 375px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0%;
+}
+#MapaSitio{
+    list-style: none;
+    width: 375px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 0%;
+}
+#Contacto li{
+    padding-bottom: 0.6rem;
+    width: 100%;
+}
+#MapaSitio li{
+    margin-right: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+#contacto .TituloList{
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+#whatsappIcon{
+    position:fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+}
+#contacto a{
+    text-decoration: none;
+    color: #0D0D0D;
+}
+#contacto .BotonContacto:hover{
+    color:#F2F2F2;
+}
+/*privacy*/
+footer{
+    display:flex;
+    flex-wrap: wrap;
+    background-color:#0D0D0D;
+    color: #F2F2F2;
+    width: 100vw;
+    justify-content: center;
+}
+footer p{
+    padding-top: 1.2rem;
+    width: 100%;
+    text-align: center;
+}
+#FooterPrivacy{
+    width: 100%;
+    background-color:#0D0D0D;
+    color: #F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 1.5rem;
+}
+#FooterPrivacy a{
+    text-decoration: none;
+    color: #F2F2F2;
+}
+#FooterPrivacy a:hover{
+    color: #F28705;
+}
+
+#FooterTerm{  
+    padding: 0.3rem;
+    text-align: left;
+    padding-left: 1rem;
+}
+#FooterPolit{
+    padding:0.3rem;
+    text-align: right;
+    padding-right: 1rem;
+}
+
