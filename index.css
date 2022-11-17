@@ -171,6 +171,7 @@ header .boton a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 0.8rem;
 }
 #clientes .cliente img{
     width: 140px;
